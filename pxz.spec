@@ -9,6 +9,7 @@ Group:		Archiving/Compression
 # source created as "make dist" in checked out GIT tree: git clone git://github.com/jnovy/pxz.git
 Source0:	http://jnovy.fedorapeople.org/%{name}/%{name}-%{version}beta.%{git_date}git.tar.xz
 URL:		http://jnovy.fedorapeople.org/pxz
+BuildRequires:	liblzma-devel libgomp-devel
 
 %description
 Parallel XZ is a compression utility that takes advantage of running
