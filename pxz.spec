@@ -29,3 +29,34 @@ export CFLAGS="%{optflags} -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE"
 %files
 %{_mandir}/man1/pxz.1*
 %{_bindir}/pxz
+
+
+%changelog
+* Sat Jul 23 2011 Per Øyvind Karlsen <peroyvind@mandriva.org> 4.999.9-3.beta.20100608git
++ Revision: 691259
+- add buildrequires
+- adapt to mandriva packaging
+- imported package pxz
+
+
+* Wed Feb 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.999.9-2.beta.20100608git
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* Thu Jun  8 2010 Jindrich Novy <jnovy@redhat.com> 4.999.9-1.beta.20100608git
+- initial import release
+
+* Thu Jun  3 2010 Jindrich Novy <jnovy@redhat.com> 4.999.9-0.1.beta.20100603git
+- review fixes (#598902)
+
+* Wed May 26 2010 Jindrich Novy <jnovy@redhat.com> 4.999.9-0.1.beta.20100526git
+- add -D option to specify context size per thread
+
+* Fri Feb 19 2010 Jindrich Novy <jnovy@redhat.com> 4.999.9-0.1.beta.20100217git
+- better error handling and stability fixes
+
+* Wed Dec  9 2009 Jindrich Novy <jnovy@redhat.com> 4.999.9-0.1.beta.20091209git
+- use fixed size context per thread (3x dict size by default)
+- reduce memory requirements for compression
+
+* Wed Nov 18 2009 Jindrich Novy <jnovy@redhat.com> 4.999.9-0.1.beta.20091118git
+- initial packaging
